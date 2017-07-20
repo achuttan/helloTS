@@ -4,10 +4,17 @@ var Person = (function () {
         this.firstName = firstName;
     }
     ;
+    Person.prototype.greet = function () {
+        return this.firstName + " " + this.lastName;
+    };
+    ;
     return Person;
 }());
 function greet(user) {
     return "Hello " + user.firstName + " " + user.lastName;
 }
-var user = new Person("Ashwin", "Balachandran");
-document.body.innerHTML = greet(user);
+function greetUser() {
+    var user = new Person("Sachin", "Tendulkar");
+    user.greet();
+}
+//document.body.innerHTML = greet(user); 

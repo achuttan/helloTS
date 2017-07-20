@@ -1,7 +1,12 @@
 <html>
     <head>
+         <script type="text/javascript" src="HelloTS.js"/> 
     </head>
     <body>
-        <script src="hellots.js"></script>
+        <span id="text"></span>
+        <script>
+            alert(document.getElementById("text").innerHTML);
+            document.getElementById("text").innerHTML = greetUser();
+        </script>
     </body>
 </html>

@@ -5,11 +5,19 @@ class Person{
         this.lastName = lastName;
         this.firstName = firstName;
     };
+    greet(){
+        return this.firstName + " " + this.lastName;
+    };
 }
 
 function greet(user: Person){
     return "Hello " + user.firstName + " " + user.lastName;
 }
 
-var user = new Person("Sachin", "Tendulkar");
-document.body.innerHTML = greet(user);
+function greetUser()
+{
+    var user = new Person("Sachin", "Tendulkar");
+    user.greet();
+}
+
+//document.body.innerHTML = greet(user);
