@@ -15,6 +15,6 @@ function greet(user) {
 }
 function greetUser() {
     var user = new Person("Sachin", "Tendulkar");
-    user.greet();
+    return user.greet();
 }
 //document.body.innerHTML = greet(user); 

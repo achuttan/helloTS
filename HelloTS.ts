@@ -14,10 +14,10 @@ function greet(user: Person){
     return "Hello " + user.firstName + " " + user.lastName;
 }
 
-function greetUser()
+function greetUser() : string
 {
     var user = new Person("Sachin", "Tendulkar");
-    user.greet();
+    return user.greet();
 }
 
 //document.body.innerHTML = greet(user);
